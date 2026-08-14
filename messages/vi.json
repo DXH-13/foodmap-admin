@@ -1,0 +1,48 @@
+{
+  "common": {
+    "appName": "FoodMap Admin",
+    "loading": "Đang tải…",
+    "error": "Đã có lỗi xảy ra",
+    "retry": "Thử lại",
+    "empty": "Chưa có dữ liệu",
+    "cancel": "Huỷ",
+    "confirm": "Xác nhận",
+    "save": "Lưu"
+  },
+
+  "nav": {
+    "dashboard": "Tổng quan",
+    "places": "Địa điểm",
+    "reviews": "Duyệt đánh giá",
+    "feedbacks": "Xử lý góp ý",
+    "categories": "Danh mục",
+    "users": "Người dùng",
+    "auditLogs": "Nhật ký kiểm toán",
+    "logout": "Đăng xuất",
+    "signIn": "Đăng nhập"
+  },
+
+  "dashboard": {
+    "title": "Tổng quan",
+    "connectionTitle": "Kết nối tới API",
+    "connectionOk": "Đã kết nối tới backend",
+    "connectionFailed": "Không kết nối được tới backend",
+    "connectionHint": "Kiểm tra backend đã chạy chưa và biến API_BASE_URL đã đúng chưa.",
+    "samplePlaces": "Địa điểm quanh trung tâm TP.HCM",
+    "noRating": "Chưa có đánh giá"
+  },
+
+  "login": {
+    "title": "Đăng nhập trang quản trị",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "submit": "Đăng nhập",
+    "failed": "Email hoặc mật khẩu không đúng",
+    "notImplemented": "Endpoint đăng nhập chưa được implement ở backend (thuộc Phase 1 của lộ trình)."
+  },
+
+  "placeholder": {
+    "comingSoon": "Màn hình này sẽ được xây ở giai đoạn sau",
+    "seeRoadmap": "Xem docs/07-plan/roadmap-v1.md"
+  }
+}
