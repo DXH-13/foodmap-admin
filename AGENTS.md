@@ -52,7 +52,7 @@ build sẽ báo `Cannot find name 'LayoutProps'`. Khai props tường minh thay 
 ### 4. Đừng sửa `src/api/generated/`
 
 Bị ghi đè mỗi lần chạy `../scripts/gen-api-client.sh`. Muốn đổi kiểu dữ liệu API thì
-sửa `docs/03-api/openapi.yaml`, rồi sinh lại. Cũng đừng tự khai lại DTO:
+sửa `docs/SDD/api/openapi.yaml`, rồi sinh lại. Cũng đừng tự khai lại DTO:
 
 ```ts
 import type { components } from '@/api/generated/schema';

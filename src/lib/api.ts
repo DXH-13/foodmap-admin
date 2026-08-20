@@ -8,7 +8,7 @@ import { getLocale } from './locale';
 import { getAccessToken } from './session';
 
 /**
- * Client HTTP **phía server**, sinh kiểu từ `docs/03-api/openapi.yaml`.
+ * Client HTTP **phía server**, sinh kiểu từ `docs/SDD/api/openapi.yaml`.
  *
  * Chỉ dùng được trong Server Component, Server Action và Route Handler — vì token
  * nằm trong cookie httpOnly mà trình duyệt không đọc được. Đây là chủ ý:

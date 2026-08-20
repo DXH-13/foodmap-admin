@@ -5,7 +5,7 @@ import type { NextConfig } from 'next';
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const nextConfig: NextConfig = {
-    // Xuất bản standalone để đóng gói Docker gọn — xem docs/06-ops/deployment.md
+    // Xuất bản standalone để đóng gói Docker gọn — xem docs/SDD/van-hanh/deployment.md
     output: 'standalone',
 };
 

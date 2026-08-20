@@ -55,11 +55,11 @@ có cookie phiên. Đó chỉ là lớp bảo vệ giao diện — **backend m�
 
 Chưa có: form đăng nhập **chưa hoạt động** vì backend chưa implement
 `POST /api/v1/auth/login` (thuộc Phase 1 của lộ trình). Các trang Địa điểm, Duyệt đánh giá,
-Xử lý góp ý hiện là placeholder — xem `docs/07-plan/roadmap-v1.md`.
+Xử lý góp ý hiện là placeholder — xem `docs/Management-Plan/lo-trinh-v1.md`.
 
 ## Client API
 
-`src/api/generated/` được **sinh tự động** từ `docs/03-api/openapi.yaml`.
+`src/api/generated/` được **sinh tự động** từ `docs/SDD/api/openapi.yaml`.
 **Đừng sửa tay** — chạy lại generator ở repo cha:
 
 ```bash
@@ -68,5 +68,5 @@ cd .. && ./scripts/gen-api-client.sh
 
 ## Tài liệu
 
-Yêu cầu và danh sách màn hình: `docs/01-srs/srs.md`, `docs/05-ux/screens.md`.
+Yêu cầu và danh sách màn hình: `docs/SRS/srs.md`, `docs/SDD/giao-dien/screens.md`.
 Quy ước code: [`AGENTS.md`](./AGENTS.md).
