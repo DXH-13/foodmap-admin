@@ -37,8 +37,7 @@
     "email": "Email",
     "password": "Mật khẩu",
     "submit": "Đăng nhập",
-    "failed": "Email hoặc mật khẩu không đúng",
-    "notImplemented": "Endpoint đăng nhập chưa được implement ở backend (thuộc Phase 1 của lộ trình)."
+    "failed": "Email hoặc mật khẩu không đúng"
   },
 
   "placeholder": {

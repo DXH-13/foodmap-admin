@@ -25,8 +25,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-    // Trang Tổng quan (`/`) cố ý để mở ở giai đoạn skeleton: backend chưa có endpoint
-    // đăng nhập, và trang này đang dùng để kiểm tra kết nối. Thêm `/` vào danh sách
-    // dưới đây khi Phase 1 hoàn thành.
-    matcher: ['/places/:path*', '/reviews/:path*', '/feedbacks/:path*', '/users/:path*'],
+    matcher: ['/', '/places/:path*', '/reviews/:path*', '/feedbacks/:path*', '/users/:path*'],
 };

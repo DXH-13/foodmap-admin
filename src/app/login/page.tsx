@@ -50,8 +50,13 @@ export default function LoginPage() {
     }
 
     return (
-        <div className="max-w-sm mx-auto space-y-6">
-            <h1 className="text-2xl font-semibold">{t('title')}</h1>
+        <div className="mx-auto mt-[12vh] w-full max-w-sm space-y-6 rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
+            <div className="space-y-3">
+                <span className="grid place-items-center size-10 rounded-xl bg-blue-600 text-white font-bold">
+                    F
+                </span>
+                <h1 className="text-xl font-semibold">{t('title')}</h1>
+            </div>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <Controller
@@ -63,7 +68,7 @@ export default function LoginPage() {
                             type="email"
                             autoComplete="username"
                             placeholder={t('email')}
-                            className="w-full rounded-md border border-neutral-300 px-3 py-2"
+                            className="w-full rounded-lg border border-neutral-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                         />
                     )}
                 />
@@ -77,7 +82,7 @@ export default function LoginPage() {
                             type="password"
                             autoComplete="current-password"
                             placeholder={t('password')}
-                            className="w-full rounded-md border border-neutral-300 px-3 py-2"
+                            className="w-full rounded-lg border border-neutral-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                         />
                     )}
                 />
@@ -87,12 +92,10 @@ export default function LoginPage() {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-md bg-blue-600 px-4 py-2 font-medium text-white disabled:opacity-60">
+                    className="w-full rounded-lg bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700 disabled:opacity-60">
                     {t('submit')}
                 </button>
             </form>
-
-            <p className="text-sm text-neutral-500">{t('notImplemented')}</p>
         </div>
     );
 }

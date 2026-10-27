@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
-import { AppNav } from '@/components/app-nav';
+import { AppSidebar } from '@/components/app-sidebar';
 import { getLocale } from '@/lib/locale';
 import { isSignedIn } from '@/lib/session';
 
@@ -28,10 +28,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <html
             lang={locale}
             className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-            <body className="min-h-full flex flex-col bg-neutral-50 text-neutral-900">
+            <body className="min-h-full flex flex-col md:flex-row bg-neutral-50 font-sans text-neutral-900">
                 <NextIntlClientProvider messages={messages}>
-                    <AppNav signedIn={signedIn} />
-                    <main className="flex-1 px-6 py-8 max-w-5xl w-full mx-auto">{children}</main>
+                    <AppSidebar signedIn={signedIn} />
+                    <main className="flex-1 min-w-0">
+                        <div className="px-6 py-8 md:px-10 max-w-6xl">{children}</div>
+                    </main>
                 </NextIntlClientProvider>
             </body>
         </html>

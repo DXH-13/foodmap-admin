@@ -37,9 +37,7 @@
     "email": "Email",
     "password": "Password",
     "submit": "Sign in",
-    "failed": "Incorrect email or password",
-    "notImplemented": "The login endpoint is not implemented in the backend yet (Phase 1 of the roadmap)."
-  },
+    "failed": "Incorrect email or password"  },
 
   "placeholder": {
     "comingSoon": "This screen will be built in a later phase",
